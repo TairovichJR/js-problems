@@ -61,3 +61,30 @@ function getGrade(s1, s2, s3) {
   */
   return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F";
 }
+
+//L1: Bartender, drinks!
+
+function getDrinkByProfession(param) {
+  let output = "Beer";
+  switch (param.toLowerCase()) {
+    case "jabroni":
+      output = "Patron Tequila";
+      break;
+    case "school counselor":
+      output = "Anything with Alcohol";
+      break;
+    case "programmer":
+      output = "Hipster Craft Beer";
+      break;
+    case "bike gang member":
+      output = "Moonshine";
+      break;
+    case "politician":
+      output = "Your tax dollars";
+      break;
+    case "rapper":
+      output = "Cristal";
+      break;
+  }
+  return output;
+}
