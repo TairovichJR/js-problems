@@ -100,6 +100,10 @@ function getDrinkByProfession(param) {
 
 //Gravity Flip
 const flip = (d, a) => {
+  if (d === "R") return a.sort((a, b) => a - b);
+  if (d === "L") return a.sort((a, b) => b - a);
+
+  /*
   if (d === "R") {
     return a.sort(function (a, b) {
       return a - b;
@@ -111,4 +115,5 @@ const flip = (d, a) => {
   } else {
     return "Invalid Direction";
   }
+  */
 };
