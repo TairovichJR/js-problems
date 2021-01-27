@@ -44,6 +44,7 @@ const quarterOf = (month) => {
 //Grasshopper - Grade book
 function getGrade(s1, s2, s3) {
   const avg = (s1 + s2 + s3) / 3;
+  /*
   if (avg >= 90 && avg <= 100) {
     return "A";
   } else if (avg >= 80 && avg < 90) {
@@ -57,4 +58,6 @@ function getGrade(s1, s2, s3) {
   } else {
     return "invalid number";
   }
+  */
+  return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F";
 }
