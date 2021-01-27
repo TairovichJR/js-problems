@@ -97,3 +97,18 @@ function getDrinkByProfession(param) {
   //   return output;
   return drinks[param.toLowerCase()] || "Beer";
 }
+
+//Gravity Flip
+const flip = (d, a) => {
+  if (d === "R") {
+    return a.sort(function (a, b) {
+      return a - b;
+    });
+  } else if (d === "L") {
+    return a.sort(function (a, b) {
+      return b - a;
+    });
+  } else {
+    return "Invalid Direction";
+  }
+};
