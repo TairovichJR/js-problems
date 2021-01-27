@@ -63,28 +63,37 @@ function getGrade(s1, s2, s3) {
 }
 
 //L1: Bartender, drinks!
+const drinks = {
+  jabroni: "Patron Tequila",
+  "school counselor": "Anything with Alcohol",
+  programmer: "Hipster Craft Beer",
+  "bike gang member": "Moonshine",
+  politician: "Your tax dollars",
+  rapper: "Cristal",
+};
 
 function getDrinkByProfession(param) {
-  let output = "Beer";
-  switch (param.toLowerCase()) {
-    case "jabroni":
-      output = "Patron Tequila";
-      break;
-    case "school counselor":
-      output = "Anything with Alcohol";
-      break;
-    case "programmer":
-      output = "Hipster Craft Beer";
-      break;
-    case "bike gang member":
-      output = "Moonshine";
-      break;
-    case "politician":
-      output = "Your tax dollars";
-      break;
-    case "rapper":
-      output = "Cristal";
-      break;
-  }
-  return output;
+  //   let output = "Beer";
+  //   switch (param.toLowerCase()) {
+  //     case "jabroni":
+  //       output = "Patron Tequila";
+  //       break;
+  //     case "school counselor":
+  //       output = "Anything with Alcohol";
+  //       break;
+  //     case "programmer":
+  //       output = "Hipster Craft Beer";
+  //       break;
+  //     case "bike gang member":
+  //       output = "Moonshine";
+  //       break;
+  //     case "politician":
+  //       output = "Your tax dollars";
+  //       break;
+  //     case "rapper":
+  //       output = "Cristal";
+  //       break;
+  //   }
+  //   return output;
+  return drinks[param.toLowerCase()] || "Beer";
 }
