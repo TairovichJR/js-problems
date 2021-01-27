@@ -1,6 +1,7 @@
 "use strict";
 
 function findDifference(a, b) {
+  /*
   let aVolume = 1;
   for (let i = 0; i < a.length; i++) {
     aVolume = aVolume * a[i];
@@ -10,9 +11,8 @@ function findDifference(a, b) {
     bVolume = bVolume * b[i];
   }
   return Math.abs(aVolume - bVolume);
+ */
+  //optimizing the code
+  return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
-
 console.log(findDifference([2, 2, 3], [5, 4, 1]));
-
-const b = [1, 2, 3];
-console.log(b.reduce((a, b) => a * b));
