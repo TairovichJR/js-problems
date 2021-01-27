@@ -27,6 +27,7 @@ var replaceDots = function (str) {
 // Quarter of the year
 const quarterOf = (month) => {
   // Your code here
+  /*
   if (month >= 1 && month <= 3) {
     return 1;
   } else if (month >= 4 && month <= 6) {
@@ -36,4 +37,6 @@ const quarterOf = (month) => {
   } else if (month >= 10 && month <= 12) {
     return 4;
   }
+*/
+  return Math.ceil(month / 3);
 };
