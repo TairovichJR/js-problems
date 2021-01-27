@@ -1,5 +1,6 @@
 "use strict";
 
+//Difference of Volumes of
 function findDifference(a, b) {
   /*
   let aVolume = 1;
@@ -15,4 +16,10 @@ function findDifference(a, b) {
   //optimizing the code
   return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
+
 console.log(findDifference([2, 2, 3], [5, 4, 1]));
+
+// FIXME: Replace all dots
+var replaceDots = function (str) {
+  return str.replace(/\./g, "-");
+};
