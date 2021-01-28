@@ -158,3 +158,28 @@ function odds(values) {
   // return values.filter((x) => x % 2 != 0);
   return values.filter((x) => x % 2);
 }
+
+//Parse nice int from char problem
+function getAge(inputString) {
+  const num = Number(inputString.charAt(0));
+  return num >= 0 && num <= 9 ? num : -1;
+}
+
+//CSV representation of array
+function toCsvText(array) {
+  let output = "'";
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      output += array[i][j] + ",";
+    }
+    output = output.substring(0, output.length - 1);
+    output += "\\n";
+  }
+  output = output.substring(0, output.length - 1);
+  return output + "'";
+}
+
+toCsvText([
+  [-25, 21, 2, -33, 48],
+  [30, 31, -32, 33, -34],
+]);
