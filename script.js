@@ -151,3 +151,10 @@ function problem(x) {
   }
   return "Error";
 }
+
+//Are arrow functions odd?
+function odds(values) {
+  // arrow it
+  // return values.filter((x) => x % 2 != 0);
+  return values.filter((x) => x % 2);
+}
