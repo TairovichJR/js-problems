@@ -132,3 +132,14 @@ function positiveSum(arr) {
 function paperwork(n, m) {
   return n < 0 || m < 0 ? 0 : n * m;
 }
+
+//Smallest unused ID
+
+function nextId(ids) {
+  for (let i = 0; i < ids.length; i++) {
+    if (ids.indexOf(i) == -1) {
+      return i;
+    }
+  }
+  return ids.length;
+}
