@@ -166,20 +166,20 @@ function getAge(inputString) {
 }
 
 //CSV representation of array
-function toCsvText(array) {
-  let output = "'";
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[i].length; j++) {
-      output += array[i][j] + ",";
-    }
-    output = output.substring(0, output.length - 1);
-    output += "\\n";
-  }
-  output = output.substring(0, output.length - 1);
-  return output + "'";
-}
+// function toCsvText(array) {
+//   let output = "'";
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array[i].length; j++) {
+//       output += array[i][j] + ",";
+//     }
+//     output = output.substring(0, output.length - 1);
+//     output += "\\n";
+//   }
+//   output = output.substring(0, output.length - 1);
+//   return output + "'";
+// }
 
-toCsvText([
-  [-25, 21, 2, -33, 48],
-  [30, 31, -32, 33, -34],
-]);
+// toCsvText([
+//   [-25, 21, 2, -33, 48],
+//   [30, 31, -32, 33, -34],
+// ]);
