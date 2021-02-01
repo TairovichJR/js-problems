@@ -224,7 +224,13 @@ function peopleWithAgeDrink(old) {
     ? drink + "coke"
     : old < 21
     ? drink + "beer"
-    : old >= 21
-    ? drink + "whisky"
-    : "";
+    : drink + "whisky";
 }
+
+const arr = (N) => {
+  const nums = [];
+  for (let i = 0; i < N; i++) {
+    nums.push(i);
+  }
+  return nums;
+};
