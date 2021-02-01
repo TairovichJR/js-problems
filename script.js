@@ -193,3 +193,10 @@ function aspectRatio(x, y) {
 function booleanToString(b) {
   return b ? "true" : "false";
 }
+
+//NBA full 48 minutes average
+function pointsPer48(ppg, mpg) {
+  // const num = (48 / mpg) * ppg;
+  // return Number(num.toFixed(1)) || 0;
+  return +((ppg / mpg) * 48).toFixed(1) || 0;
+}
