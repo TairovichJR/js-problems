@@ -188,3 +188,8 @@ function getAge(inputString) {
 function aspectRatio(x, y) {
   return [Math.ceil((y * 16) / 9), y];
 }
+
+//Convert a Boolean to a String
+function booleanToString(b) {
+  return b ? "true" : "false";
+}
