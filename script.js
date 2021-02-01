@@ -183,3 +183,8 @@ function getAge(inputString) {
 //   [-25, 21, 2, -33, 48],
 //   [30, 31, -32, 33, -34],
 // ]);
+
+//Aspect Ratio Cropping - Part 1
+function aspectRatio(x, y) {
+  return [Math.ceil((y * 16) / 9), y];
+}
