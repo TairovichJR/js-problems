@@ -200,3 +200,8 @@ function pointsPer48(ppg, mpg) {
   // return Number(num.toFixed(1)) || 0;
   return +((ppg / mpg) * 48).toFixed(1) || 0;
 }
+
+//Find the position!
+const position = function (letter) {
+  return `Position of alphabet: ${letter.charCodeAt(0) - 97 + 1}`;
+};
