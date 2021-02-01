@@ -205,3 +205,15 @@ function pointsPer48(ppg, mpg) {
 const position = function (letter) {
   return `Position of alphabet: ${letter.charCodeAt(0) - 97 + 1}`;
 };
+
+//Lario and Muigi Pipe Problem
+function pipeFix(numbers) {
+  const newNumber = [];
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    newNumber.push(i);
+  }
+  return newNumber;
+}
+const n = [1, 2, 3, 5, 6, 8, 9];
+
+console.log(pipeFix(n));
