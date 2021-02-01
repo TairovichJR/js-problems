@@ -214,6 +214,17 @@ function pipeFix(numbers) {
   }
   return newNumber;
 }
-const n = [1, 2, 3, 5, 6, 8, 9];
 
-console.log(pipeFix(n));
+// Drink about
+function peopleWithAgeDrink(old) {
+  const drink = "drink ";
+  return old < 14
+    ? drink + "toddy"
+    : old < 18
+    ? drink + "coke"
+    : old < 21
+    ? drink + "beer"
+    : old >= 21
+    ? drink + "whisky"
+    : "";
+}
